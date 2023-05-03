@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Error</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .error-container {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .error-code {
+      font-size: 100px;
+      color: #dc3545;
+      margin-bottom: 20px;
+    }
+
+    .error-message {
+      font-size: 24px;
+      color: #6c757d;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="error-container">
+        <h1 class="error-code" th:text="${status}">Error</h1>
+        <p class="error-message" th:text="${error}">An error occurred while processing your request.</p>
+        <p class="error-message" th:text="${message}">Please try again later.</p>
+        <a href="/login" class="btn btn-primary">Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

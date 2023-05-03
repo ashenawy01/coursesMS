@@ -1,0 +1,50 @@
+-- Database MySQL script (During the project was connected on localhost)
+-- NOT Embedded!!
+
+
+
+-- drop database coursesdb;
+-- create  database coursesdb;
+-- use coursesDB;
+-- drop table Teacher;
+-- create table Teacher (
+--                          id int not null auto_increment,
+--                          firstname varchar(60),
+--                          lastname varchar(60),
+--                          username varchar(60) unique,
+--                          password text,
+--
+--                          constraint course_pk primary key (id)
+-- );
+-- drop table Course;
+-- create table Course (
+--                         id int not null auto_increment,
+--                         imgsrc varchar(150),
+--                         name varchar(60) not null,
+--                         hours double not null,
+--                         rate double default 0,
+--                         teacherID int,
+--
+--                         constraint course_pk primary key (id),
+--                         constraint course_fk foreign key (teacherID) references Teacher(id)
+-- );
+-- Alter table Course
+--     drop constraint course_fk;
+-- Alter table Course
+--     add constraint course_fk foreign key (teacherID) references Teacher(id)
+--     on update cascade
+--        on delete set null;
+--
+-- insert into Teacher (firstName, lastName, username, password)
+-- values ("Abdelrhamn", "Elshenawy", "a.shenawy", "$2a$10$4TIP325Bk8ZeXPOOu1l.jOHRBkfvoiuROHiinOs4JAL7c/uDx5evW");
+--
+-- insert into Teacher (firstName, lastName, username, password)
+-- values ("Abdullah", "Khalid", "abdullah123", "$2a$10$4TIP325Bk8ZeXPOOu1l.jOHRBkfvoiuROHiinOs4JAL7c/uDx5evW");
+--
+--
+--
+-- insert into Course(name, imgSrc, hours, rate, teacherID)
+-- values ("JAVA", "java.jpg", 80, 4.5, 1), ("Spring boot", "springboot.jpg", 65, 4.3, 1);
+--
+-- select * from Teacher;
+-- select * from Course;
